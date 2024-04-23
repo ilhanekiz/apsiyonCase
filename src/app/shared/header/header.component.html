@@ -1,0 +1,44 @@
+<header id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-1" [ngClass]="{'hidden': !isListPage}">
+        <div ngbDropdown class="d-inline-block genres">
+          <button class="btn btn-outline-primary" id="genres" ngbDropdownToggle>Türler</button>
+          <div ngbDropdownMenu aria-labelledby="genres">
+            <mat-radio-group [(ngModel)]="genresSelected" (change)="genresChange($event)">
+              <ul>
+                <li><mat-radio-button labelPosition="before" name="genres" value="all">Tümü</mat-radio-button></li>
+                <li><mat-radio-button labelPosition="before" name="genres" value="film">Filmler</mat-radio-button></li>
+                <li><mat-radio-button labelPosition="before" name="genres" value="series">Diziler</mat-radio-button></li>
+              </ul>
+            </mat-radio-group>
+          </div>
+        </div>
+      </div>
+      <div class="col-1" [ngClass]="{'hidden': !isListPage}">
+        <div ngbDropdown class="d-inline-block sort">
+          <button class="btn btn-outline-primary" id="sort" ngbDropdownToggle>Sırala</button>
+          <div ngbDropdownMenu aria-labelledby="sort">
+            <button ngbDropdownItem (click)="handleSorting('decreasing')" [ngClass]="{'active': isDecreasing}">Puana Göre (Azalan)</button>
+            <button ngbDropdownItem (click)="handleSorting('increasing')" [ngClass]="{'active': isIncreasing}">Puana Göre (Artan)</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-2" [ngClass]="{'hidden': isListPage}">
+        <button type="button" class="primary-btn" routerLink="/list">
+          <mat-icon class="star-icon">keyboard_arrow_left</mat-icon>
+          <span class="text">LİSTEYE DÖN</span>
+        </button>
+      </div>
+      <div class="col-8 text-center">
+        <h1 class="title">Case Study</h1>
+      </div>
+      <div class="col-2 text-right">
+        <button type="button" class="primary-btn" routerLink="/add">
+          <mat-icon class="star-icon">add</mat-icon>
+          <span class="text">YENİ KAYIT</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

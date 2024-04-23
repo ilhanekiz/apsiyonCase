@@ -1,0 +1,23 @@
+@import "scss/variables";
+
+.mat-radio-group {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 25px;
+
+  .mat-radio-button {
+    margin: 0 20px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  input.form-control {
+    background-color: $gray;
+  }
+}
+
+button[disabled] {
+  opacity: 0.5;
+}

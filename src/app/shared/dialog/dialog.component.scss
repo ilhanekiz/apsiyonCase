@@ -1,0 +1,73 @@
+@import "scss/variables";
+
+.popup-delete {
+  padding: 20px;
+
+  .inner {
+    text-align: center;
+
+    .mat-dialog-actions {
+      justify-content: center;
+      margin-top: 20px;
+
+      .primary-btn {
+        &:first-child {
+          margin-right: 5px;
+        }
+
+        &:last-child {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .title,
+    .text {
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 400;
+      color: $text-color;
+      margin: 0;
+    }
+
+    .delete-icon {
+      color: $red-dark;
+    }
+
+    .mat-icon {
+      height: 100px;
+      width: 100px;
+    }
+
+    .material-icons {
+      font-size: 90px;
+    }
+  }
+}
+
+.popup-add {
+  text-align: center;
+
+  .check-icon {
+    height: 140px;
+    width: 140px;
+    color: $green;
+    font-size: 140px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $text-color;
+    margin: 0 0 40px;
+  }
+}
+
+.gray {
+
+}
+
+.blue {
+
+}

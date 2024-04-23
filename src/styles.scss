@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../scss/variables";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow-x: hidden; }
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: $primary;
+}
+
+.mat-radio-outer-circle {
+  border-width: 1px !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+  background-color: $primary;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary-btn {
+  background-color: $primary;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid $gray-darker;
+  min-width: 160px;
+  line-height: 34px;
+
+  .text {
+    line-height: 100%;
+    vertical-align: middle;
+  }
+
+  mat-icon {
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.dropdown {
+  .btn-outline-primary {
+    color: #fff;
+    background-color: $primary;
+    border-color: $gray-darker;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited,
+    &:not(:disabled):not(.disabled):active {
+      box-shadow: none;
+      background-color: $primary;
+      border-color: $gray-darker;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.show {
+    .btn-outline-primary {
+      &.dropdown-toggle {
+        background-color: $primary;
+        border-color: $gray-darker;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.page-link {
+  color: $primary;
+  background-color: $gray;
+  border: 1px solid $gray-darker;
+
+  &:hover {
+    color: $primary;
+    background-color: $gray;
+    border-color: $gray-darker;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: $primary;
+  border-color: $primary;
+}

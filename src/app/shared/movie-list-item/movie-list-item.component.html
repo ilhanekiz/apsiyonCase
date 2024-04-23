@@ -1,0 +1,29 @@
+<div class="movie-list-item" *ngFor="let movie of movies">
+  <div class="row">
+
+    <div class="col-4">
+      <div class="d-flex align-items-center text-hover" (click)="handleMovieDelete(movie)">
+        <p class="text">{{movie.title}} ({{movie.year}})</p>
+        <mat-icon class="delete-icon">delete</mat-icon>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="d-flex align-items-center justify-content-center">
+        <mat-icon class="star-icon">star</mat-icon>
+        <span class="star-text">{{movie.star}}</span>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="d-flex align-items-center justify-content-end">
+        <div class="point-btn">
+          <span>Puan ver</span>
+          <a href="javascript:void(0)" class="triangle-up" (click)="handleMoviePlus(movie)"></a>
+          <a href="javascript:void(0)" class="triangle-down" (click)="handleMovieMinus(movie)"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

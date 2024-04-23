@@ -1,0 +1,149 @@
+/* Theme */
+
+::ng-deep {
+  .gray {
+    .primary-btn {
+      background-color: $secondary !important;
+    }
+
+    mat-checkbox {
+      .mat-checkbox-checkmark-path {
+        stroke: $secondary !important;
+      }
+    }
+
+    #header {
+      .sort {
+        .dropdown-menu {
+          .dropdown-item {
+            &.active {
+              color: $secondary !important;
+            }
+          }
+        }
+      }
+    }
+
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+      border-color: $secondary !important;
+    }
+
+    .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+      background-color: $secondary !important;
+    }
+
+    .primary-btn {
+      background-color: $secondary !important;
+    }
+
+    .dropdown {
+      .btn-outline-primary {
+        background-color: $secondary !important;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:visited,
+        &:not(:disabled):not(.disabled):active {
+          background-color: $secondary !important;
+        }
+      }
+
+      &.show {
+        .btn-outline-primary {
+          &.dropdown-toggle {
+            background-color: $secondary !important;
+          }
+        }
+      }
+    }
+
+    .page-link {
+      color: $secondary !important;
+
+      &:hover {
+        color: $secondary !important;
+      }
+    }
+
+    .page-item.active .page-link {
+      background-color: $secondary !important;
+      border-color: $secondary !important;
+      color: #fff !important;
+    }
+  }
+}
+
+::ng-deep {
+  .blue {
+    .primary-btn {
+      background-color: $third !important;
+    }
+
+    mat-checkbox {
+      .mat-checkbox-checkmark-path {
+        stroke: $third !important;
+      }
+    }
+
+    #header {
+      .sort {
+        .dropdown-menu {
+          .dropdown-item {
+            &.active {
+              color: $third !important;
+            }
+          }
+        }
+      }
+    }
+
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+      border-color: $third !important;
+    }
+
+    .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+      background-color: $third !important;
+    }
+
+    .primary-btn {
+      background-color: $third !important;
+    }
+
+    .dropdown {
+      .btn-outline-primary {
+        background-color: $third !important;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:visited,
+        &:not(:disabled):not(.disabled):active {
+          background-color: $third !important;
+        }
+      }
+
+      &.show {
+        .btn-outline-primary {
+          &.dropdown-toggle {
+            background-color: $third !important;
+          }
+        }
+      }
+    }
+
+    .page-link {
+      color: $third !important;
+
+      &:hover {
+        color: $third !important;
+      }
+    }
+
+    .page-item.active .page-link {
+      background-color: $third !important;
+      border-color: $third !important;
+      color: #fff !important;
+    }
+  }
+}

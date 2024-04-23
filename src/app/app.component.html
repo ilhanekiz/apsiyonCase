@@ -1,0 +1,4 @@
+<div [ngClass]="{'primary': theme.isPrimary, 'gray': theme.isGray, 'blue': theme.isBlue}">
+  <router-outlet></router-outlet>
+  <app-theme-color (theme)="handleThemeChange($event)"></app-theme-color>
+</div>

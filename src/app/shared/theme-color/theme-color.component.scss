@@ -1,0 +1,47 @@
+@import "scss/variables";
+
+.theme-container {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  right: -230px;
+  transition: all .6s;
+
+  &.active {
+    right: 0 !important;
+  }
+
+  .setting-icon {
+    text-align: center;
+    height: 50px;
+    width: 60px;
+    border-left: 1px solid $gray-dark;
+    border-top: 1px solid $gray-dark;
+    border-bottom: 1px solid $gray-dark;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    cursor: pointer;
+
+    .mat-icon {
+      line-height: 50px;
+    }
+  }
+
+  .setting-icon,
+  .theme-wrap {
+    background-color: #fff;
+    float: left;
+  }
+
+  .theme-wrap {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid $gray-dark;
+
+    .title {
+      font-size: 18px;
+      font-weight: 400;
+      color: $text-color;
+    }
+  }
+}

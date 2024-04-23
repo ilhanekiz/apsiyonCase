@@ -1,0 +1,40 @@
+<!-- <app-header
+(decreasing)="handleSorting('decreasing')"
+(increasing)="handleSorting('increasing')"
+(genresEvent)="handleGenresSorting($event)">
+</app-header>
+
+<div class="container">
+  <app-movie-list-item
+  [movies]="filterMovies"
+  (movieDelete)="handleMovieDelete($event)"
+  (moviePlus)="handleMoviePlus($event)"
+  (movieMinus)="handleMovieMinus($event)">
+  </app-movie-list-item>
+
+  <ngb-pagination
+  [collectionSize]="collectionSize"
+  [(page)]="page"
+  [pageSize]="pageSize"
+  (pageChange)="loadPage($event)">
+  </ngb-pagination>
+</div> -->
+
+
+<!-- <div class="movie-list-item" *ngFor="let movie of (movies$ | async).movies">
+  <span>{{movie.title}}</span>
+</div> -->
+
+
+<app-header
+(sorting)="handleSorting($event)">
+</app-header>
+<div class="container">
+  <app-movie-list-item
+  [movies]="(movies$ | async).filterMovies"
+  (movieDelete)="handleMovieDelete($event)"
+  (moviePlus)="handleMoviePlus($event)"
+  (movieMinus)="handleMovieMinus($event)">
+  </app-movie-list-item>
+</div>
+

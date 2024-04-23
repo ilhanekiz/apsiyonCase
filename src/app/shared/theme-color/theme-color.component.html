@@ -1,0 +1,13 @@
+<div class="theme-container" [ngClass]="{'active': isActive}">
+  <div class="setting-icon" (click)="handleThemeToggle()">
+    <mat-icon>settings</mat-icon>
+  </div>
+  <div class="theme-wrap">
+    <h1 class="title">Tema Rengi Seçiniz:</h1>
+    <mat-radio-group [(ngModel)]="themeSelected" (change)="handleThemeChange($event)">
+      <mat-radio-button value="primary"></mat-radio-button>
+      <mat-radio-button value="gray"></mat-radio-button>
+      <mat-radio-button value="blue"></mat-radio-button>
+    </mat-radio-group>
+  </div>
+</div>
